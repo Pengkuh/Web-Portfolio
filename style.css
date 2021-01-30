@@ -1,0 +1,249 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: calibri;
+}
+
+@font-face {
+    font-family: 'aldo';
+    src: url(../../font/aldo.ttf);
+}
+
+body {
+    background-color: #FDD100;
+}
+
+
+/*========================HEADER============================*/
+
+.page1 {
+    background-color: #dfba00;
+    min-height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'aldo';
+}
+
+.icon img {
+    width: 300px;
+}
+
+.sambutan {
+    width: 40%;
+    padding-left: 20px;
+    font-family: 'aldo';
+}
+
+.sambutan .h {
+    color: rgb(41, 41, 41);
+    font-size: 3.5em;
+    font-size: 4.5em;
+    font-family: 'aldo';
+}
+
+.sambutan .w {
+    color: rgb(41, 41, 41);
+    font-size: 2em;
+    margin-left: 3px;
+    padding-bottom: 5px;
+    font-family: 'aldo';
+}
+
+.sambutan p {
+    width: 70%;
+    color: white;
+    opacity: .85;
+    padding-top: 20px;
+}
+
+
+/*====================== PROFIL ===========================*/
+
+.page2 {
+    width: 100%;
+    background-color: #eb0085;
+    box-sizing: border-box;
+    height: 700px;
+}
+
+.logo img {
+    height: 70px;
+    display: block;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    margin: auto;
+}
+
+.foto img {
+    width: 200px;
+    margin: auto;
+    display: block;
+    padding-bottom: 15px;
+}
+
+.bio {
+    padding-bottom: 100px;
+}
+
+.bio .nama {
+    color: #F8D1E2;
+    opacity: .95;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bio p {
+    margin: auto;
+    display: block;
+    width: 80%;
+    color: #F8D1E2;
+    opacity: .75;
+    text-align: center;
+    font-size: 14px;
+}
+
+.sosmed img {
+    display: block;
+    height: 30px;
+    margin: auto;
+    padding-bottom: 5px;
+}
+
+.page3 {
+    box-sizing: border-box;
+}
+
+.judul {
+    background-color: rgb(140, 37, 0);
+    background-image: url('../gambar/kayu.png');
+    width: 100%;
+    padding: 30px 0px;
+    text-align: center;
+    color: white;
+    font-family: 'aldo';
+    font-size: 3em;
+}
+
+.judul p {
+    font-size: .5em;
+}
+
+.konten {
+    background-color: #FDD100;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f3f3f3;
+    color: rgb(36, 36, 36)2, 67, 67);
+    width: 45%;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 7px #917e1e;
+    width: 40%;
+    margin-top: 20px;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.card .gambar img {
+    width: 100%;
+}
+
+.card .desk {
+    font-size: 0.85em;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.85;
+}
+
+
+/*====================== ABOUT ===========================*/
+
+#footer {
+    color: #ffffff;
+    background-color: #262626;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.about h3 {
+    opacity: .8;
+    font-size: 1.2em;
+    margin-left: 3%;
+    padding-top: 30px;
+}
+
+.about p {
+    width: 40%;
+    opacity: .5;
+    font-size: 0.9em;
+    padding: 20px 0px;
+    margin-left: 3%;
+}
+
+.corp {
+    background-color: #0c0c0c;
+    padding: 20px 0px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.corp a {
+    color: #ffffff;
+    opacity: .5;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.corp li {
+    padding: 0px 10px;
+    display: inline;
+}
+
+.corp p {
+    padding-top: 20px;
+    background-color: #0c0c0c;
+    text-align: center;
+    opacity: .5;
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 650px) {
+    .page1 {
+        flex-direction: column;
+    }
+    .sambutan {
+        width: 90%;
+    }
+    .bio p {
+        width: 70%;
+    }
+    .container {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+    }
+    .card {
+        width: 90%;
+    }
+    .about p {
+        width: 70%;
+        opacity: .5;
+        font-size: 0.9em;
+        padding: 20px 0px;
+        margin-left: 3%;
+    }
+}
